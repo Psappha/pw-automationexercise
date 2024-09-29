@@ -1,6 +1,7 @@
 package org.pages;
 
 import com.microsoft.playwright.*;
+import com.microsoft.playwright.options.AriaRole;
 
 public class BasePage<T extends BasePage<T>> {
 
@@ -9,7 +10,7 @@ public class BasePage<T extends BasePage<T>> {
     static Browser browser = playwright.webkit().launch(options);
     public static Page page = browser.newPage();
 
-    private final Locator productsLink = page.locator("[href='/products']");
+    private final Locator productsLink = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(" Products"));
 
     public ProductsPage goToProducts() {
         productsLink.click();
