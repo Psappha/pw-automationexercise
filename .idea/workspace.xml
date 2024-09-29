@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4be85795-d88e-4d9d-905b-109a8698f47b" name="Changes" comment="Add Basic classes&#10;Start singleton design pattern&#10;Create basic test">
-      <changelist_data name="Pablo Soler" email="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/example/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/example/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/example/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +57,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.test.FirstTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.pw-automationexercise [compile,exec:java...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/repos/pw-automationexercise_a&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/repos/pw-automationexercise/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.FirstTestSuite.executor": "Run",
+    "JUnit.FirstTests.executor": "Run",
+    "JUnit.test.FirstTest.executor": "Run",
+    "Maven.pw-automationexercise [compile,exec:java...].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/repos/pw-automationexercise_a",
+    "onboarding.tips.debug.path": "C:/repos/pw-automationexercise/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\repos\pw-automationexercise\src\main\java\org\pages" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.pages" />
       <recent name="org.pages.example" />
     </key>
   </component>
@@ -81,10 +88,10 @@
       <command value="mvn compile exec:java -D exec.mainClass=org.example.App" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test.FirstTest">
+  <component name="RunManager" selected="JUnit.FirstTests">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="pw-automationexercise_a" />
+      <module name="pw-automationexercise" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -95,19 +102,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pw-automationexercise_a" />
+    <configuration name="FirstTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pw-automationexercise" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="FirstTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTests.FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pw-automationexercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTests" />
       <option name="METHOD_NAME" value="FirstTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="pw-automationexercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="pw-automationexercise" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test.FirstTest" />
+        <item itemvalue="JUnit.FirstTests" />
+        <item itemvalue="JUnit.FirstTests.FirstTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -121,6 +151,15 @@
       <option name="presentableId" value="Default" />
       <updated>1727550970229</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add Basic classes&#10;Start singleton design pattern&#10;Create basic test">
+      <option name="closed" value="true" />
+      <created>1727574679799</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727574679799</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

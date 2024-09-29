@@ -1,11 +1,11 @@
 import com.microsoft.playwright.Page;
 import org.junit.AfterClass;
-import org.pages.example.BasePage;
-import org.pages.example.HomePage;
-import org.pages.example.ProductsPage;
+import org.pages.BasePage;
+import org.pages.HomePage;
+import org.pages.ProductsPage;
 
 public class BaseTest {
-    public org.pages.example.HomePage homePage = HomePage.getInstance();
+    public HomePage homePage = HomePage.getInstance();
     public ProductsPage productsPage = ProductsPage.getInstance();
 
     @AfterClass
