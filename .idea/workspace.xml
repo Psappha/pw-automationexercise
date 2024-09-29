@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4be85795-d88e-4d9d-905b-109a8698f47b" name="Changes" comment="Add Basic classes&#10;Start singleton design pattern&#10;Create basic test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/example/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/example/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/example/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/ProductsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
+    <list default="true" id="4be85795-d88e-4d9d-905b-109a8698f47b" name="Changes" comment="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,12 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727574679799</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card">
+      <option name="closed" value="true" />
+      <created>1727623509827</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727623509827</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Basic classes&#10;Start singleton design pattern&#10;Create basic test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Basic classes&#10;Start singleton design pattern&#10;Create basic test" />
+    <MESSAGE value="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

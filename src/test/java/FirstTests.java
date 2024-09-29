@@ -6,6 +6,9 @@ public class FirstTests extends BaseTest {
         homePage.navigate()
                 .goToProducts()
                 .addToCartProduct(3)
+                .goToCart()
+                .goToProducts()
+                .addToCartProduct(2)
                 .goToCart();
     }
 
