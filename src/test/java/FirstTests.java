@@ -6,10 +6,14 @@ public class FirstTests extends BaseTest {
         homePage.navigate()
                 .goToProducts()
                 .addToCartProduct(3)
-                .goToCart()
-                .goToProducts()
+                .closeModalAndContinue()
                 .addToCartProduct(2)
-                .goToCart();
+                .goToCart()
+                .clickProceedToCheckoutUnathorized()
+                .clickLogin()
+                .signupRandom()
+                .fillOutRandomInfo();
+
     }
 
 }

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4be85795-d88e-4d9d-905b-109a8698f47b" name="Changes" comment="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card&#10;Fix warnings" />
+    <list default="true" id="4be85795-d88e-4d9d-905b-109a8698f47b" name="Changes" comment="Add randomizer&#10;Add method for filling out signup&#10;Add method to fill out form&#10;Add context tracing options&#10;Add login and signup classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/pages/SignupPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,22 +59,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "JUnit.FirstTestSuite.executor": "Run",
-    "JUnit.FirstTests.FirstTest.executor": "Run",
-    "JUnit.FirstTests.executor": "Run",
-    "JUnit.test.FirstTest.executor": "Run",
-    "Maven.pw-automationexercise [compile,exec:java...].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/repos/pw-automationexercise_a",
-    "onboarding.tips.debug.path": "C:/repos/pw-automationexercise/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FirstTestSuite.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FirstTests.FirstTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FirstTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test.FirstTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.pw-automationexercise [compile,exec:java...].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/.m2/repository/io/github/astrapi69/randomizer/10.2&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/repos/pw-automationexercise/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.55172414&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\repos\pw-automationexercise\src\main\java\org\pages" />
@@ -81,7 +95,7 @@
       <command value="mvn compile exec:java -D exec.mainClass=org.example.App" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTests.FirstTest">
+  <component name="RunManager" selected="JUnit.FirstTests">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="pw-automationexercise" />
@@ -114,23 +128,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="pw-automationexercise" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="pw-automationexercise" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTests.FirstTest" />
         <item itemvalue="JUnit.FirstTests" />
+        <item itemvalue="JUnit.FirstTests.FirstTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -176,14 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727624106024</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card&#10;Fix warnings">
+      <option name="closed" value="true" />
+      <created>1727624361392</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727624361392</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Basic classes&#10;Start singleton design pattern&#10;Create basic test" />
     <MESSAGE value="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card" />
     <MESSAGE value="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card&#10;Fix warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Cart page and methods&#10;Add Modal and methods&#10;Add methods for interacting with product card&#10;Fix warnings" />
+    <MESSAGE value="Add randomizer&#10;Add method for filling out signup&#10;Add method to fill out form&#10;Add context tracing options&#10;Add login and signup classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add randomizer&#10;Add method for filling out signup&#10;Add method to fill out form&#10;Add context tracing options&#10;Add login and signup classes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

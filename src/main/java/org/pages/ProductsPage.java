@@ -18,10 +18,10 @@ public class ProductsPage extends BasePage<ProductsPage> {
     }
 
     public AddToCartModal addToCartProduct(Integer index) {
-        Locator addToCarCard = page.locator("a[data-product-id=\"" + index + "\"]").first();
+        Locator addToCartCard = page.locator("a[data-product-id=\"" + index + "\"]").first();
         Locator addToCartBtnByIndex = page.locator("a[data-product-id=\"" + index + "\"]").last();
-        addToCarCard.hover();
-        addToCartBtnByIndex.click();
+        Locator.ClickOptions clickOptions = new Locator.ClickOptions().setDelay(100);
+        addToCartCard.click();
         return AddToCartModal.getInstance();
     }
 
@@ -37,10 +37,6 @@ public class ProductsPage extends BasePage<ProductsPage> {
                 $instance = new AddToCartModal();
             }
             return $instance;
-        }
-
-        public AddToCartModal(Page page) {
-            super(page);
         }
 
         public ProductsPage closeModalAndContinue() {
